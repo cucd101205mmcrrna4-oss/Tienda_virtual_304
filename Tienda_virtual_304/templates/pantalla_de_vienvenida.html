@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngui Mazahua - Bienvenida</title>
+    <style>
+        body {
+            background-color: #f5f0e1;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .contenedor {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #9f3226;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #e67e22;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #9f3226;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ngui Mazahua</h1>
+        <h2>La Casa Mazahua</h2>
+        <h3>¡BIENVENIDOS!</h3>
+        <p>Bienvenido a nuestra tienda virtual.</p>
+        <p>Conoce nuestros productos y tradiciones Mazahuas.</p>
+        <a href="{{ url_for('login') }}">
+            <button>INICIAR SESIÓN</button>
+        </a>
+    </div>
+</body>
+</html>

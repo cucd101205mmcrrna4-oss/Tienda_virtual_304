@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Ventas</title>
+</head>
+<body style="background-color: #f5f0e1; font-family: sans-serif; padding: 20px;">
+    <h1>Registro de Ventas</h1>
+    
+    <table border="1" style="background: #fadbd8; width: 100%; border-collapse: collapse;">
+        <tr>
+            <th>Folio</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Producto</th>
+            <th>Total</th>
+        </tr>
+        {% for v in ventas %}
+        <tr>
+            <td>{{ v.folio }}</td>
+            <td>{{ v.fecha }}</td>
+            <td>{{ v.cliente }}</td>
+            <td>{{ v.producto }}</td>
+            <td>${{ v.total }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
